@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "docker-poetry-env"
+version = "0.1.0"
+description = ""
+authors = ["azupero_adolph <azupero.adolph@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.1.0"
+matplotlib = "^3.3.0"
+seaborn = "^0.10.1"
+plotly = "^4.9.0"
+scikit-learn = "^0.23.2"
+lightgbm = "^2.3.1"
+xgboost = "^1.1.1"
+optuna = "^2.0.0"
+jupyterlab = "^2.2.4"
+shap = "^0.35.0"
+mlflow = "^1.10.0"
+hydra-core = "^0.11.3"
+kaggle = "^1.5.6"
+japanize-matplotlib = "^1.1.2"
+boto3 = "^1.14.38"
+emoji = "^0.6.0"
+mecab-python3 = "^1.0.1"
+gensim = "^3.8.3"
+wordcloud = "^1.7.0"
+nlplot = "^1.2.0"
+nltk = "^3.5"
+unidic-lite = "^1.0.6"
+ipywidgets = "^7.5.1"
+torch = "^1.6.0"
+tensorflow = "^2.3.0"
+pytorch-lightning = "^0.8.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0.1"
+flake8 = "^3.8.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

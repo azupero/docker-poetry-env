@@ -1,0 +1,11 @@
+version: '3'
+services:
+  poetry_env:
+    build: .
+    image: poetry
+    container_name: poetry_env
+    user: root
+    volumes:
+      - $PWD:/working
+    working_dir: /working
+    tty: true
