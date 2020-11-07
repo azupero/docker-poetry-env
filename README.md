@@ -1,5 +1,5 @@
 # docker-poetry-env
-poetryでの分析環境テンプレート
+poetryでの分析環境テンプレートです
 <br>
 <br>
 ## docker imageの作成
