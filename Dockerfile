@@ -35,3 +35,5 @@ COPY ./main.py ./
 RUN ldconfig \
     && apt-get clean \
     && apt-get autoremove
+
+CMD ["poetry","run","streamlit","run","main.py"]
