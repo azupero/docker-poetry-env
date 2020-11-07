@@ -17,6 +17,9 @@ RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
 
 WORKDIR /working
 
+# pip update
+RUN pip install --upgrade pip
+
 # poetry
 COPY poetry.lock pyproject.toml ./
 
