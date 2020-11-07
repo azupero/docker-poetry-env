@@ -1,0 +1,14 @@
+version: '3'
+services:
+  poetry_env:
+    build: ./
+    image: poetry-env
+    container_name: poetry_env
+    user: root
+    volumes:
+      - $PWD:/working
+    working_dir: /working
+    tty: true
+    ports:
+      - "8888:8888"
+    command: jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --port=8888
