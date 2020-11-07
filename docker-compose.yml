@@ -10,5 +10,6 @@ services:
     working_dir: /working
     tty: true
     ports:
-      - "8888:8888"
-    command: jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --port=8888
+      - "8501:8501"
+    # command: jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --port=8888
+    command: poetry run streamlit run main.py

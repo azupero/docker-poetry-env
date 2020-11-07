@@ -28,6 +28,9 @@ RUN pip install poetry \
     # && poetry config virtualenvs.in-project true \
     && poetry install
 
+# streamlit demo
+COPY ./main.py ./
+
 # config and clean up
 RUN ldconfig \
     && apt-get clean \
