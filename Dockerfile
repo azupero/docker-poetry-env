@@ -36,4 +36,5 @@ RUN ldconfig \
     && apt-get clean \
     && apt-get autoremove
 
-CMD ["poetry","run","streamlit","run","main.py"]
+# CMD ["streamlit","run","main.py"]
+# CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root"]
